@@ -1,8 +1,9 @@
-const Videos = () => (
-  <div>
-    {' '}
-    <p> s</p>Videos
-  </div>
-)
+const Videos = ({ videos }) => {
+  return (
+    <div>
+      <p>s</p>
+    </div>
+  )
+}
 
 export default Videos
