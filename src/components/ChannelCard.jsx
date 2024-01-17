@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { demoProfilePicture } from "../utils/constants";
 
-const ChannelCard = ({ channelDetail, marginTop, isPDP }) => (
+const ChannelCard = ({ channelDetail, marginTop, isCDP }) => (
 	<Box
 		sx={{
 			boxShadow: "none",
@@ -17,7 +17,7 @@ const ChannelCard = ({ channelDetail, marginTop, isPDP }) => (
 			margin: "auto",
 			marginTop,
 		}}>
-		<Link to={!isPDP ? `/channel/${channelDetail?.id?.channelId}` : ""}>
+		<Link to={!isCDP ? `/channel/${channelDetail?.id?.channelId}` : ""}>
 			<CardContent
 				sx={{
 					display: "flex",
