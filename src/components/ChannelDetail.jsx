@@ -10,7 +10,6 @@ const ChannelDetail = () => {
 
 	const [channelDetail, setChannelDetail] = useState(null);
 	const [videos, setVideos] = useState([]);
-	console.log(channelDetail);
 
 	useEffect(() => {
 		fetchFromApi(`channels?part=snippet&id=${id}`).then((data) =>
